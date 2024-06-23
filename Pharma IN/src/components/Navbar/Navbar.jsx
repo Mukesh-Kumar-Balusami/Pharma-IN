@@ -10,9 +10,9 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-        <div>
-            <img src={assetsObject.logo_namelogo} alt="Pharma IN Logo + NameLogo" className="logo_namelogo" />
-        </div>
+        {/* <div>
+            <img src={assetsObject.logo} alt="Pharma IN Logo" className="logo" />
+        </div> */}
             <div>
                 <ul className="navbar-menu">
                     <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Home</li>
@@ -21,10 +21,10 @@ const Navbar = () => {
                     <li onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Contact Us</li>
             </ul>
         </div>
-        <div className='navbar-right'>
+        {/* <div className='navbar-right'>
             <button className="signup-button">Sign Up</button>
             <button className="login">Login</button>
-        </div>
+        </div> */}
     </div>
   )
 }

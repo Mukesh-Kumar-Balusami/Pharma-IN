@@ -1,11 +1,12 @@
 .navbar{
-    padding: 5px 0px;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgb(9, 4, 99);
+    align-items:center;
+    background-color: rgba(70, 62, 82, 0.847);
     color: white;
 }
+
 
 .navbar .logo_namelogo{
     width: 250px;
@@ -15,10 +16,12 @@
 /* Navbar menu */
 
 .navbar-menu{
+    padding: 20px 40px;
     display: flex;
     list-style: none;
     gap: 2rem;
     font-size: larger;
+    margin-left: 60px;
 }
 
 li:hover{
@@ -40,7 +43,7 @@ li:hover{
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin: 30px;
+    margin: 10px;
 }
 
 .navbar button{

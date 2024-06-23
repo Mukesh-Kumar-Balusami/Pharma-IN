@@ -1,9 +1,13 @@
 import logo_namelogo from './Logo_NameLogo.png';
 import logo from './Logo.png';
 import namelogo from './NameLogo.png';
+import instagram from './Instagram.png'
+import facebook from './Facebook.png'
 
 export const assetsObject ={
     logo_namelogo,
     logo,
-    namelogo
+    namelogo,
+    instagram,
+    facebook
 }
