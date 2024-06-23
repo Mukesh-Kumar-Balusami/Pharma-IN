@@ -1,15 +1,18 @@
 .navbar{
-    padding: 20px 0px;
+    padding: 5px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.087);
+    background-color: rgb(9, 4, 99);
     color: white;
 }
 
 .navbar .logo_namelogo{
-    width: 270px;
+    width: 250px;
 }
+
+
+/* Navbar menu */
 
 .navbar-menu{
     display: flex;
@@ -19,8 +22,61 @@
 }
 
 li:hover{
-    color: gainsboro;
+    color: rgb(174, 207, 174);
     cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 0.7rem;
 }
+
+.navbar .active{
+    text-decoration: underline solid rgb(174, 207, 174);
+    text-underline-offset: 0.7rem;
+}
+
+
+/* Navbar Buttons */
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 30px;
+}
+
+.navbar button{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar button:active {
+    transform: translateY(1px);
+}
+
+.navbar button.large {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+/* Sign up button HOVER */
+.navbar .signup-button:hover {
+    background-image: linear-gradient(to bottom, #45a049, #4CAF50);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+/* Login button HOVER */
+.navbar .login:hover{
+    background-image: linear-gradient(to bottom, #ed1a1a, #e70c0c);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
