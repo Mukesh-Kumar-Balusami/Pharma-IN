@@ -24,6 +24,22 @@ a{
   margin: auto;
 }
 
+/* Define the animation keyframes */
+@keyframes rotateAnimation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the image */
+.rotate-image {
+  animation: rotateAnimation 4s linear infinite;
+}
+
+
 
 
 

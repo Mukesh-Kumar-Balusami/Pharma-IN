@@ -1,6 +1,6 @@
 .navbar{
     padding: 10px 0px;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items:center;
     background-color: rgba(70, 62, 82, 0.847);
@@ -16,7 +16,7 @@
 /* Navbar menu */
 
 .navbar-menu{
-    padding: 20px 40px;
+    padding: 0px 500px 10px 500px;
     display: flex;
     list-style: none;
     gap: 2rem;

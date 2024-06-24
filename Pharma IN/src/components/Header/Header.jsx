@@ -16,11 +16,18 @@ const Header = () => {
         <div className='header-context'>
             <div className='header-content'>
                 <h1>Kick Start...</h1>
-                <h3>Hey there, Ready to experience the Pharma IN</h3>
+                <h3>Hey there, Start working with Pharma IN</h3>
             </div>
             <div className='header-buttons'>
                 <button className="signup-button">Sign Up</button>
                 <button className="login">Login</button>
+            </div>
+            <div className="googleSignin-context">
+                <button className="googleSigninButton">
+                    <img src={assetsObject.googleLogo} alt="Google Logo" className="googleLogo" />
+                    <p>Sign In with Google</p>
+                </button>
+                
             </div>
             <div className="social-contant">
                 <img src={assetsObject.instagram} alt="Pharma IN Instagram account" className="instagram" />

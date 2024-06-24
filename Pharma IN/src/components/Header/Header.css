@@ -1,9 +1,16 @@
 .header{
     display:flex;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background: url('./BGI1.jpeg') no-repeat;
+    background-size:cover;
+    position:relative;
+    background-position: center;
     justify-content:first baseline;
     /* rgb(9, 4, 99) */
+}
+
+.header-logo{
+    animation: rotateAnimation 4s linear;
 }
 
 .header .logoname{
@@ -16,12 +23,13 @@
 .header-context{
     display: inline;
     margin:20PX;
-    background-color: transparent;
+    backdrop-filter: blur(20PX); /* Adjust the blur radius as needed */
     /* padding: 180px 50px; */
     border-radius: 50px;
     border-color: #45a049;
     border-style:outset;
 }
+
 
 .header-content{
     padding: 80px 40px;
@@ -30,6 +38,13 @@
 h1, h3{
     color: blueviolet;
 }
+
+.header-content h1{
+    font-size: 3.5vw;
+    color: red;
+}
+
+
 
 /* Social contant */
 
@@ -99,6 +114,28 @@ h1, h3{
 /* Login button HOVER */
 .header .login:hover{
     background-image: linear-gradient(to bottom, #eeff00, #bdc914);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.googleLogo{
+    width: 30px;
+}
+
+.googleSignin-context .googleSigninButton{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.googleSignin-context{
+    position: relative;
+    align-items: center;
+    margin: 30px 80px 10px 80px;
+}
+
+.googleSignin-context .googleSigninButton:hover{
+    background-image: linear-gradient(to bottom, #00c8ff, #3f6fc8);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
 }
