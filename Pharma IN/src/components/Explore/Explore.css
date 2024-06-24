@@ -1,0 +1,86 @@
+.explore{
+    margin: 0px;
+    background: rgb(23, 1, 88);
+    position:relative;
+    background-position: center;
+    align-items: center;
+}
+
+.explore h1{
+    color: white;
+}
+
+/* HorizontalMenu.css */
+
+.horizontal-menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-right: 10px;
+    padding: 10px 125px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #36ed3f, #4CAF50);
+    font-style: bold;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.menu-list li.active {
+    background-image: linear-gradient(to bottom, #00c8ff, #3f6fc8);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.menu-content {
+    /* Set initial position */
+    position: relative;
+    left: 0;
+  
+    /* Animation properties */
+    animation: slideLeftAnimation 1s ease;
+}
+
+.menu-content p {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.content-container {
+    margin-top: 20px;
+  }
+  
+  .content {
+    width: 100%;
+    max-width: 600px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: lightblue;
+    transition: transform 0.5s ease; /* Animation transition */
+    transform: translateX(-100%);
+  }
+  
+  .content.slide-right {
+    position: absolute;
+    left: 100vh;
+  
+    /* Animation properties */
+    animation: slideLeftAnimation 2s ease;
+  }
